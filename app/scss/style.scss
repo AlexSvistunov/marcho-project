@@ -25,14 +25,14 @@
     &__list-link {
         color: $title;
         border-bottom: 1px solid transparent;
-        padding-bottom: 1px;
+        padding: 0 2px 1px;
         transition: all .3s;
         @extend %roboto-400;
 
         &:hover {
             color: $accent;
             border-bottom: 1px solid $accent;
-            @extend %roboto-500;
+            @extend %roboto-700;
 
 
         }
@@ -187,8 +187,6 @@
     align-items: center;
     font-size: 12px;
 
-
-   
 
     &__accept {
         
