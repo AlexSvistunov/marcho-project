@@ -9,6 +9,7 @@
   "author": "Alexey Svistunov",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.3",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
@@ -20,5 +21,9 @@
     "jquery": "^3.7.0",
     "sass": "^1.63.3",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.19",
+    "install": "^0.13.0"
   }
 }
