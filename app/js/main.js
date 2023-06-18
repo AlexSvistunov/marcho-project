@@ -8,8 +8,14 @@ $(function(){
 
     });
 
-    $('.fancybox').fancybox({
+    $('.star').rateYo({
+    starWidth: "18px",
+    readOnly: true,
+    normalFill: '#ccccce',
+    ratedFill: '#ffc35b'
 
+        
+        
       });
 
   
