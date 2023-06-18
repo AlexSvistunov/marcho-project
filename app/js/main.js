@@ -7,4 +7,11 @@ $(function(){
         autoplaySpeed: 2000
 
     });
+
+    $('.fancybox').fancybox({
+
+      });
+
+  
+
 });
