@@ -1,4 +1,23 @@
 $(function(){
+
+  $('.select-style').styler();
+
+  $('.filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+  },
+  });
+
+
+
     $('.top-slider__inner').slick({
         dots: true,
         arrows: false,
@@ -9,14 +28,15 @@ $(function(){
     });
 
     $('.star').rateYo({
-    starWidth: "18px",
+    starWidth: "16px",
     readOnly: true,
     normalFill: '#ccccce',
-    ratedFill: '#ffc35b'
+    ratedFill: '#ffc35b',
+    rating: 5
 
         
         
-      });
+    });
 
       function getTimeRemaining(endtime) {
         const total = Date.parse(endtime) - Date.parse(new Date());
