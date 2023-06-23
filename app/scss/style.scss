@@ -527,6 +527,49 @@
 
 .product-item {
     max-width: 370px;
+    text-align: center;
+
+    &.product-item--list {
+        min-width: 100%;
+        &:hover {
+            .product-item__link-box {
+
+                transform: translateY(-280%);
+            }
+        }
+
+        .product-item__img-box {
+            height: 250px;
+            width: 200px;
+
+            img {
+                height: 250px;
+            }
+        }
+
+        .product-item__link-box {
+            bottom: auto;
+            
+            box-shadow: none;
+            background-color: transparent;
+
+            width: 115px;
+            
+            .product-item__link {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .product-item__link--line {
+                display: none;
+            }
+        }
+        
+    }
 
 
     &:hover {
@@ -1138,6 +1181,15 @@
 .shop-content {
     width: 100%;
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .product-item {
+            margin-bottom: 40px;
+        }
+    }
+
     &__filter {
         border: 1px solid #ececec;
         padding: 20px 25px 20px 30px;
@@ -1156,6 +1208,7 @@
   
 
     &__filter-btn {
+        outline: none;
         border: none;
         background-color: transparent;
         margin-left: 15px;
@@ -1185,6 +1238,36 @@
     &__filter-show {
 
     }
+}
+
+
+.jq-selectbox__select {
+    nav-left: 30px;
+    box-shadow: none;
+    padding: 0 30px 0 0;
+    text-shadow: none;
+    background: transparent;
+    border: none;
+    color: $default;
+    &:hover {
+        background: transparent;
+    }
+
+}
+
+.jq-selectbox__trigger {
+    border-left: none;
+}
+
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 10px;
+    height: 5px;
+    border: none;
+    background-image: url('../images/icons/angle-down.svg');
 }
 
 .irs--flat {
