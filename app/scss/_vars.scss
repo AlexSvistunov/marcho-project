@@ -45,6 +45,16 @@ $bg: #f6f6f6;
         position: absolute;
 }
 
+
+
+%radio-hidden {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
