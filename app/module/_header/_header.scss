@@ -67,3 +67,14 @@
 
     }
 }
+
+
+@media(max-width: 1200px) {
+   .header {
+
+    &__inner {
+        padding-right: 10px;
+    }
+
+   }
+}
