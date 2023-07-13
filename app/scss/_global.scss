@@ -49,6 +49,7 @@ a {
 
 .breadcrumbs {
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-left: 25px;
     position: relative;
@@ -92,66 +93,7 @@ a {
     }
 }
 
-.modal {
-    padding-top: 100px;
-    max-width: 570px;
-    margin: 0 auto 115px;
 
-    &__links {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    &__link {
-        color: #909090;
-        font-size: 22px;
-        @extend %roboto-400;
-        text-transform: uppercase;
-        margin: 0 30px;
-    }
-
-    &__link--active {
-        color: $accent;
-        @extend %roboto-700;
-    }
-
-    &__label {
-        display: block;
-        margin-bottom: 30px;
-
-    }
-
-    &__input {
-        display: block;
-        width: 100%;
-        border: none;
-        background-color: $bg;
-        height: 60px;
-        margin-top: 4px;
-        padding: 0 15px;
-    }
-
-    &__btn {
-        background-color: $title;
-        text-transform: uppercase;
-        color: #fff;
-        @extend %roboto-400;
-        padding: 14px 0;
-        border: none;
-        width: 100%;
-        cursor: pointer;
-        margin-bottom: 12px;
-        
-    }
-
-    &__text {
-        margin-bottom: 25px;
-    }
-
-    &__lost-pass {
-        color: $accent;
-
-    }
-}
 
 .header--404-page {
     background-color: $bg;
@@ -215,6 +157,20 @@ a {
 
 }
 
+@media(max-width: 620px) {
+    .title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+
+@media(max-width: 375px) {
+    .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
 
 
 
